@@ -7,6 +7,9 @@
 # REQUIREMENTS for SRS
 # you need to have Qt4 [this was tested with 4.7.8]
 #
+#Install Qt4:
+> sudo apt-get install -y qt4-*
+##################################### 
 # in order to verify to have Qt4 do:
 > which qmake
 # and check it exists, is in the PATH and what it points to.
@@ -28,11 +31,16 @@ qt5
 #####################################
 # COMPILE SRS
 #
-# untar the tar file
-tar zvxf SRS_lia.tar.gz
 # go inside the directory
 cd SRS
 # create the Makefile with qmake and the right version of Qt4
 qmake -qt=qt4-x86_64-linux-gnu -o Makefile SRSDCS.pro
 # compile
 make
+#check for file in which you get the error "fatal error: QtWidgets/QAction: File or directory not existing"
+#open the file with emacs
+emacs ui_mainwindow.h   #(in my case)
+# modify all the "#include <QtWidgets/XXX>" with "#include <XXX>"
+#compile
+make
+
