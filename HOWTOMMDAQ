@@ -15,8 +15,6 @@
 ######################
 # HOW TO BUILD
 #
-# untar the file
-tar zvxf mmdaq_old.tar.gz
 # move to the directory
 cd mmdaq
 #
