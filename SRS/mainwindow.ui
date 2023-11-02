@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>833</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="FEC">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>2</y>
+      <width>251</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="connectPB">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>54</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>31</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>FEC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="connectionLabel">
+     <property name="geometry">
+      <rect>
+       <x>144</x>
+       <y>70</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="disconnectPB">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>76</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Disconnect</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>102</x>
+       <y>58</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>102</x>
+       <y>84</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>64</y>
+       <width>20</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>68</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="configureRegisters">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>164</x>
+       <y>128</y>
+       <width>81</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Configure</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>102</y>
+       <width>151</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <layout class="QGridLayout" name="gridLayoutPer"/>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>500</y>
+       <width>241</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPushButton" name="warmInit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>25</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Warm Init</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="forceReboot">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>25</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Force Reboot</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="enableResets">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>1</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Resets</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="enableExperModeButton">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>50</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Enable Expert Mode</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>220</y>
+       <width>241</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Configuration Files</string>
+     </property>
+     <widget class="QPushButton" name="loadButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="SendConfFile">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Download To H/W</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="confFile">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>50</y>
+        <width>211</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearFilePB">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>50</y>
+        <width>16</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="media.qrc">:/pyrforos.gif</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>v1.5.4</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>303</y>
+       <width>97</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="offAcq">
+      <property name="geometry">
+       <rect>
+        <x>53</x>
+        <y>17</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Off</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="onAcq">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>17</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>On</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>-6</y>
+        <width>71</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Acquisition</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>303</y>
+       <width>140</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="externalTrg">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>17</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>External</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="internalTrg">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>17</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Internal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>-6</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Trigger</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>181</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>-6</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Hybrid</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetAPVs">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>15</y>
+        <width>71</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="sendPB">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>100</y>
+       <width>61</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Send</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="reqIdDisplay">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>156</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>CrossCursor</cursorShape>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="numDigits">
+      <number>3</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="link">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>0</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>a</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>29</y>
+       <width>52</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Address</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="baseAddressTF">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>28</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>343</y>
+       <width>241</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Zero Suppression</string>
+     </property>
+     <widget class="QSpinBox" name="zeroSuppressionThreshold">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>37</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>15</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>62</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Threshold</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="forcePedestalZeroCheck">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Force Pedestal to Zero</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="forceSignalCheck">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Force Signal Detection</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setThresholdButton">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>55</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Set</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>419</y>
+       <width>241</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Control APV Processor</string>
+     </property>
+     <widget class="QPushButton" name="startPedestalButton">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>46</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Start Pedestal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bypassAPVOn">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>21</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bypass on </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bypassAPVOff">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>21</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bypass off</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetAPVProcessor">
+      <property name="geometry">
+       <rect>
+        <x>174</x>
+        <y>21</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reset APV</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="apvSelectForBypass">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>46</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>15</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selectAPVforBypass">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>46</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Select APV</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="configuration">
+    <property name="geometry">
+     <rect>
+      <x>258</x>
+      <y>2</y>
+      <width>351</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>0</y>
+       <width>141</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Configuration</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>23</y>
+       <width>140</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <layout class="QGridLayout" name="gridLayout"/>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>23</y>
+       <width>142</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <layout class="QGridLayout" name="gridLayoutCh"/>
+    </widget>
+    <widget class="QCheckBox" name="selectAllChannels">
+     <property name="geometry">
+      <rect>
+       <x>182</x>
+       <y>194</y>
+       <width>87</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Select All</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>72</y>
+      <width>191</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <layout class="QGridLayout" name="gridLayoutCmd"/>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>258</x>
+      <y>220</y>
+      <width>551</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Reply Form</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Reply Port</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="clearLogPB">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>20</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Clear Log</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="replyPort">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>77</x>
+       <y>23</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>6007</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="replyText">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>531</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="saveLogPB">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>20</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Save Log</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>833</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSub1_1">
+   <property name="text">
+    <string>sub1_1</string>
+   </property>
+  </action>
+  <action name="actionSub1_2">
+   <property name="text">
+    <string>sub1_2</string>
+   </property>
+  </action>
+  <action name="actionAPV">
+   <property name="text">
+    <string>APV</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="media.qrc"/>
+ </resources>
+ <connections/>
+</ui>

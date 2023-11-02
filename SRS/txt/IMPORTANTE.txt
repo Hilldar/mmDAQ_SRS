@@ -1,0 +1,5 @@
+Ordine per rifare i files di configurazione:
+1)ADC card
+2)APV Hybrid
+3)APV application
+4)PLL

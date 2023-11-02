@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pyrforos.gif</file>
+        <file>SRSDCS.icns</file>
+    </qresource>
+</RCC>
