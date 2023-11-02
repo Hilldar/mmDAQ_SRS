@@ -1,0 +1,52 @@
+##############################################################
+# this tar file has been tested Ubuntu 20.04.1, with gcc 9.4.0
+# Lia Lavezzi (University of Torino, lia.lavezzi@to.infn.it)                                                                                                         # 2023-06-23
+
+#####################################
+# REQUIREMENTS for mmdaq
+# you will need ROOT, BOOST e gcc:
+#
+# ROOT, it was tested with ROOT 6.24/06
+#
+# BOOST, it was tested with BOOST 1.71.0
+#
+# gcc, it was tested with gcc 9.4.0
+
+######################
+# HOW TO BUILD
+#
+# untar the file
+tar zvxf mmdaq_old.tar.gz
+# move to the directory
+cd mmdaq
+#
+# if needed, you will have to modify the Makefile to set correctly:
+BOOSTINC=/usr/include/boost [in my case]
+BOOSLIB=/usr/lib/x86_64-linux-gnu [in my case]
+# ...and set the right directory of the library of gcc in LDFLAGS
+# [I have gcc 9.4.0]
+-L/usr/lib/gcc/x86_64-linux-gnu/9 [in my case]
+#
+# compile
+make
+
+#######################
+# FIXES TO AVOID CRASH IN COMPILATION
+#
+# added in CConfiguration.cpp:
+# #include <TSystem.h>
+#
+# added in CDetChamber.cpp L.128:
+#   #if ROOT_VERSION_CODE < ROOT_VERSION(6,0,0)
+#      hist->SetBit(TH1::kCanRebin);  
+#   #else
+#      hist->SetCanExtend(TH1::kXaxis);
+#   #endif
+#
+# to avoid the error: CDetChamber.cpp:128:22: error: ‘kCanRebin’ is not a member of ‘TH1’
+
+#############################
+# HOW TO TEST
+#
+# use the file test_BESIII_0to0.config and run:
+./mmdaq --config:test_BESIII_0to0.config

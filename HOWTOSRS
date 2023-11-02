@@ -1,0 +1,38 @@
+##############################################################
+# this tar file has been tested Ubuntu 20.04.1, with gcc 9.4.0
+# Lia Lavezzi (University of Torino, lia.lavezzi@to.infn.it)
+# 2023-06-23
+
+#####################################
+# REQUIREMENTS for SRS
+# you need to have Qt4 [this was tested with 4.7.8]
+#
+# in order to verify to have Qt4 do:
+> which qmake
+# and check it exists, is in the PATH and what it points to.
+# In my case I do:
+> which qmake
+/usr/bin/qmake
+> ls -l /usr/bin/qmake
+/usr/bin/qmake -> qtchooser
+> qtchooser -list-versions
+4
+5
+default
+qt4-x86_64-linux-gnu
+qt4
+qt5-x86_64-linux-gnu
+qt5
+# I want to use qt4-x86_64-linux-gnu, then I will use the command qmake with that option [see later] 
+
+#####################################
+# COMPILE SRS
+#
+# untar the tar file
+tar zvxf SRS_lia.tar.gz
+# go inside the directory
+cd SRS
+# create the Makefile with qmake and the right version of Qt4
+qmake -qt=qt4-x86_64-linux-gnu -o Makefile SRSDCS.pro
+# compile
+make
